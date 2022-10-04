@@ -7,7 +7,7 @@ This theme is tailored with the beautiful github high contrast theme for the edi
  
 ## Install
 
-1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme).
+1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Zibro.monokai-hc-extreme).
 2. Click on the "Install" button.
 3. Then [select a theme]
     - `Monokai HC Extreme light`
