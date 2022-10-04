@@ -2,9 +2,10 @@
   "name": "monokai-hc-extreme",
   "displayName": "MONOKAI_HC_EXTREME",
   "description": "Monokai code theme joined with github high contrast editor theme",
-  "version": "0.0.1",
+  "repository": "https://github.com/arro000/MONOKAI_HC_EXTREME",
+  "version": "0.9.2",
   "engines": {
-    "vscode": "^1.71.0"
+    "vscode": "^1.70.0"
   },
   "categories": [
     "Themes"
@@ -12,9 +13,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "monkai high contrast extreme",
+        "label": "monkai high contrast extreme dark",
         "uiTheme": "hc-black",
-        "path": "./themes/monkai-high-contrast-extreme-color-theme.json"
+        "path": "./themes/monkai-high-contrast-extreme-dark-color-theme.json"
+      },
+      {
+        "label": "monkai high contrast extreme light",
+        "uiTheme": "hc-light",
+        "path": "./themes/monkai-high-contrast-extreme-light-color-theme.json"
       }
     ]
   }
