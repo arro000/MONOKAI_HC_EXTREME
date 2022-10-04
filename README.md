@@ -1,6 +1,6 @@
 # Monokai HC Extreme
 
-
+![alt text](https://i.im.ge/2022/10/04/1kNtJz.example.png)
 
 ## A new high contrast clear experience 
 This theme is tailored with the beautiful github high contrast theme for the editor joined with powerful monokai code highlight
