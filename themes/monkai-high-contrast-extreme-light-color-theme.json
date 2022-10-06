@@ -699,7 +699,7 @@
 		{
 			"scope": "storage.type",
 			"settings": {
-				"foreground": "#0011ff",
+				"foreground": "#000dc7",
 				"fontStyle": "italic"
 			}
 		},
@@ -755,21 +755,21 @@
 		{
 			"scope": "support.function",
 			"settings": {
-				"foreground": "#0011ff",
+				"foreground": "#000dc7",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "support.constant",
 			"settings": {
-				"foreground": "#0011ff",
+				"foreground": "#000dc7",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "support.type, support.class",
 			"settings": {
-				"foreground": "#0011ff",
+				"foreground": "#000dc7",
 				"fontStyle": "italic"
 			}
 		},
@@ -809,21 +809,21 @@
 		{
 			"scope": "markup.bold",
 			"settings": {
-				"foreground": "#0011ff",
+				"foreground": "#000dc7",
 				"fontStyle": "bold"
 			}
 		},
 		{
 			"scope": "markup.heading",
 			"settings": {
-				"foreground": "#0011ff",
+				"foreground": "#000dc7",
 				"fontStyle": "bold"
 			}
 		},
 		{
 			"scope": "markup.italic",
 			"settings": {
-				"foreground": "#0011ff",
+				"foreground": "#000dc7",
 				"fontStyle": "italic"
 			}
 		},
