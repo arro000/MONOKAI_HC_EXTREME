@@ -6,7 +6,9 @@
   "publisher":"Zibro", 
   "icon":"images/icon.png",
   "version": "1.2.3",
-   
+  "engines": {
+    "vscode": "^1.70.0"
+  },
   "categories": [
     "Themes"
   ],
