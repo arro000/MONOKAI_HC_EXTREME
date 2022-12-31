@@ -3,8 +3,13 @@
 All notable changes to the "monokai-hc-extreme" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
- 
-## [1.2.1]:
+
+## [1.2.4]:
+### Changed
+  - updated readme 
+  - updated tags
+
+## [1.2.3]:
 ### Changed
   - fix color brightness in light mode
   - update icon and preview in marketplace

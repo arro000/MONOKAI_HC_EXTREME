@@ -4,7 +4,9 @@
 
 ## A new high contrast clear experience 
 This theme is tailored with the beautiful github high contrast theme for the editor joined with powerful monokai code highlight
- 
+## Preview
+[Link](https://vscodethemes.com/e/zibro.monokai-hc-extreme/monokai-hc-extreme-dark?language=javascript)
+
 ## Install
 
 1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=Zibro.monokai-hc-extreme).

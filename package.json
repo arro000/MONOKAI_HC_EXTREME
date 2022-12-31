@@ -3,9 +3,9 @@
   "displayName": "Monokai HC extreme",
   "description": "Monokai code theme joined with github high contrast editor theme",
   "repository": "https://github.com/arro000/MONOKAI_HC_EXTREME",
-  "publisher":"Zibro", 
-  "icon":"images/icon.png",
-  "version": "1.2.3",
+  "publisher": "Zibro",
+  "icon": "images/icon.png",
+  "version": "1.2.4",
   "engines": {
     "vscode": "^1.70.0"
   },
