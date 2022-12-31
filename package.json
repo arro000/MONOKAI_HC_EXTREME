@@ -5,10 +5,19 @@
   "repository": "https://github.com/arro000/MONOKAI_HC_EXTREME",
   "publisher": "Zibro",
   "icon": "images/icon.png",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "engines": {
     "vscode": "^1.70.0"
   },
+  "keywords": [
+    "light",
+    "dark",
+    "theme",
+    "color-theme",
+    "monokai",
+    "high-contrast",
+    "github"
+  ],
   "categories": [
     "Themes"
   ],

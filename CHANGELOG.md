@@ -4,6 +4,10 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.5]:
+### Changed
+  - added keywords
+  
 ## [1.2.4]:
 ### Changed
   - updated readme 
