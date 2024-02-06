@@ -4,27 +4,38 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [1.2.5]:
+## [1.2.6]
 ### Changed
-  - added keywords
+
+- fix "pre" element foreground color
+
+## [1.2.5]
+### Changed
+
+- added keywords
   
-## [1.2.4]:
+## [1.2.4]
 ### Changed
-  - updated readme 
-  - updated tags
 
-## [1.2.3]:
-### Changed
-  - fix color brightness in light mode
-  - update icon and preview in marketplace
+- updated readme
+- updated tags
 
-## [1.2.1]:
+## [1.2.3]
 ### Changed
-  - fix deprecated background on light theme , contrast adjustement blue, red and green colors
 
-## [1.2.0]:
+- fix color brightness in light mode
+- update icon and preview in marketplace
+
+## [1.2.1]
 ### Changed
-  - light color contrast adjustement on blue, green and violet colors
+
+- fix deprecated background on light theme , contrast adjustement blue, red and green colors
+
+## [1.2.0]
+### Changed
+
+- light color contrast adjustement on blue, green and violet colors
 
 ## [1.0.0]
+
 - Initial release
