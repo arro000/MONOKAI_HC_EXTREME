@@ -4,6 +4,12 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.7]
+### Fixed
+
+- remove inherited high-contrast outlines from child dropdown menus ([#1](https://github.com/arro000/MONOKAI_HC_EXTREME/issues/1))
+- add explicit menu and menubar colors for both the dark and light themes
+
 ## [1.2.6]
 ### Changed
 
