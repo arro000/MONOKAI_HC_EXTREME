@@ -4,6 +4,19 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.5.0]
+### Added
+
+- Ruby syntax rules for class references, instance/class variables, keyword/block parameters, interpolation, builtin methods and YARD documentation
+- Dart/Flutter syntax and semantic rules for types/widgets, annotations, fields, import prefixes, constructor tear-offs, interpolation, escapes and Dartdoc
+- Java syntax and semantic rules for records, generic types, arrays, annotations, annotation members, Javadoc, constructors and inferred variables
+- Ruby, Dart, Flutter and Java highlighting examples with per-language classification notes and extension recommendations
+
+### Changed
+
+- shorten the main README and move detailed language/color tables to the examples guide
+- retain the existing dark/light palettes and neutral function-parameter colors across the new languages
+
 ## [1.4.2]
 ### Fixed
 

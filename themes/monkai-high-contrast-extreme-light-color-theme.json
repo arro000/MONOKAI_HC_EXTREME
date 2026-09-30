@@ -913,7 +913,7 @@
 			"settings": { "foreground": "#24292F", "fontStyle": "" }
 		},
 		{
-			"name": "C# and TypeScript type names",
+			"name": "Type names",
 			"scope": ["entity.name.type", "entity.other.inherited-class", "support.class.component.vue"],
 			"settings": { "foreground": "#005466", "fontStyle": "" }
 		},
@@ -1210,6 +1210,91 @@
 			"name": "Shell declaration keywords",
 			"scope": ["storage.type.function.shell", "storage.type.alias.shell"],
 			"settings": { "foreground": "#AC154C", "fontStyle": "" }
+		},
+		{
+			"name": "Ruby class references and builtin methods",
+			"scope": ["support.class.ruby", "support.function.kernel.ruby", "keyword.other.special-method.ruby"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Ruby instance and class variables",
+			"scope": ["variable.other.readwrite.instance.ruby", "variable.other.readwrite.class.ruby"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Ruby block and keyword parameters",
+			"scope": ["variable.other.block.ruby", "constant.other.symbol.hashkey.parameter.function.ruby", "comment.line.parameter.yard.ruby"],
+			"settings": { "foreground": "#24292F", "fontStyle": "" }
+		},
+		{
+			"name": "Ruby splat and block argument operators",
+			"scope": ["storage.type.variable.ruby"],
+			"settings": { "foreground": "#AC154C", "fontStyle": "" }
+		},
+		{
+			"name": "Ruby interpolation bodies",
+			"scope": ["meta.embedded.line.ruby source.ruby"],
+			"settings": { "foreground": "#24292F", "fontStyle": "" }
+		},
+		{
+			"name": "Ruby interpolation delimiters",
+			"scope": ["punctuation.section.embedded.begin.ruby", "punctuation.section.embedded.end.ruby"],
+			"settings": { "foreground": "#552AA3", "fontStyle": "" }
+		},
+		{
+			"name": "Ruby YARD documentation tags and types",
+			"scope": ["comment.line.keyword.yard.ruby", "comment.line.keyword.punctuation.yard.ruby", "comment.line.type.yard.ruby"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Dart and Flutter types and widget classes",
+			"scope": ["support.class.dart", "storage.type.primitive.dart"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Dart metadata annotations",
+			"scope": ["storage.type.annotation.dart"],
+			"settings": { "foreground": "#8A451F", "fontStyle": "" }
+		},
+		{
+			"name": "Dart interpolation delimiters",
+			"scope": ["meta.embedded.expression.dart"],
+			"settings": { "foreground": "#552AA3", "fontStyle": "" }
+		},
+		{
+			"name": "Dart interpolated variable references",
+			"scope": ["meta.embedded.expression.dart variable.parameter.dart"],
+			"settings": { "foreground": "#24292F", "fontStyle": "" }
+		},
+		{
+			"name": "Dart documentation references and inline code",
+			"scope": ["variable.name.source.dart", "variable.other.source.dart"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Java types, arrays and generic type arguments",
+			"scope": ["storage.type.java", "storage.type.generic.java", "storage.type.object.array.java", "storage.type.primitive.java"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Java inferred variable keyword",
+			"scope": ["storage.type.local.java"],
+			"settings": { "foreground": "#AC154C", "fontStyle": "" }
+		},
+		{
+			"name": "Java annotations",
+			"scope": ["storage.type.annotation.java", "punctuation.definition.annotation.java"],
+			"settings": { "foreground": "#8A451F", "fontStyle": "" }
+		},
+		{
+			"name": "Java annotation members and Javadoc tags",
+			"scope": ["constant.other.key.java", "keyword.other.documentation.javadoc.java"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Java variable declarations",
+			"scope": ["variable.other.definition.java"],
+			"settings": { "foreground": "#24292F", "fontStyle": "" }
 		}
 	],
 	"semanticTokenColors": {
@@ -1296,6 +1381,26 @@
 		"modifier:swift": { "foreground": "#8A451F", "fontStyle": "" },
 		"macro:swift": { "foreground": "#8A451F", "fontStyle": "" },
 		"comment.documentation:swift": { "italic": true },
+		"annotation:dart": { "foreground": "#8A451F", "fontStyle": "" },
+		"*.annotation:dart": { "foreground": "#8A451F", "fontStyle": "" },
+		"boolean:dart": "#552AA3",
+		"source:dart": { "foreground": "#24292F", "fontStyle": "" },
+		"source.interpolation:dart": { "foreground": "#552AA3", "fontStyle": "" },
+		"keyword.void:dart": { "foreground": "#005466", "fontStyle": "" },
+		"string.escape:dart": "#552AA3",
+		"comment.source:dart": { "foreground": "#005466", "fontStyle": "" },
+		"variable.instance:dart": { "foreground": "#005466", "fontStyle": "" },
+		"variable.static:dart": { "foreground": "#005466", "fontStyle": "" },
+		"variable.importPrefix:dart": { "foreground": "#005466", "fontStyle": "" },
+		"method.constructor:dart": { "foreground": "#005466", "fontStyle": "" },
+		"label:dart": { "foreground": "#8A451F", "fontStyle": "" },
+		"annotation:java": { "foreground": "#8A451F", "fontStyle": "" },
+		"annotationMember:java": { "foreground": "#005466", "fontStyle": "" },
+		"modifier:java": { "foreground": "#AC154C", "fontStyle": "" },
+		"record:java": { "foreground": "#005466", "fontStyle": "" },
+		"recordComponent:java": { "foreground": "#24292F", "fontStyle": "" },
+		"method.constructor:java": { "foreground": "#005466", "fontStyle": "" },
+		"keyword.documentation:java": { "foreground": "#005466", "fontStyle": "" },
 		"*.deprecated": { "strikethrough": true },
 		"*.deprecated:csharp": { "strikethrough": true },
 		"*.deprecated:vue": { "strikethrough": true },
