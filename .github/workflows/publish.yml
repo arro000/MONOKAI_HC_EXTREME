@@ -1,0 +1,77 @@
+name: Publish extension
+
+on:
+  push:
+    tags:
+      - 'v[0-9]*'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - name: Check out release tag
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install packaging tools
+        run: npm ci
+
+      - name: Validate themes and release version
+        run: npm run check -- --tag "$GITHUB_REF_NAME"
+
+      - name: Package extension
+        id: package
+        shell: bash
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          VSIX="monokai-hc-extreme-${VERSION}.vsix"
+          npm run package -- --out "$VSIX" --githubBranch "$GITHUB_REF_NAME"
+          echo "vsix=$VSIX" >> "$GITHUB_OUTPUT"
+
+      - name: Save VSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.ref_name }}-vsix
+          path: ${{ steps.package.outputs.vsix }}
+          if-no-files-found: error
+
+      - name: Publish to VS Code Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+          VSIX: ${{ steps.package.outputs.vsix }}
+        shell: bash
+        run: |
+          if [ -z "$VSCE_PAT" ]; then
+            echo "::error::Add the VSCE_PAT repository secret for publisher Zibro."
+            exit 1
+          fi
+          npm exec -- vsce publish --packagePath "$VSIX" --skip-duplicate
+
+      - name: Create GitHub Release and attach VSIX
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VSIX: ${{ steps.package.outputs.vsix }}
+        shell: bash
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "$VSIX" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "$VSIX" --verify-tag --title "$GITHUB_REF_NAME" --generate-notes
+          fi

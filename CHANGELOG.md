@@ -4,6 +4,29 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.3.0]
+### Added
+
+- semantic highlighting for types, parameters, properties, constants, functions and decorators in both themes
+- C# semantic token support for records, delegates, fields, extension methods and XML documentation
+- TextMate rules for C#/TypeScript declarations, generics, properties, documentation and string interpolation
+- Vue directive/shorthand styling and Angular binding, pipe and embedded-template styling
+- Go builtin/type/import styling and semantic interface/format placeholder support
+- Rust lifetimes, macros, attributes, associated types and semantic ownership/unsafe styling
+- Swift protocols, associated types, argument labels, attributes and compiler directives
+- Bash variables, positional/special parameters, command substitutions, flags, builtin commands and heredocs
+- TypeScript/TSX component, JSDoc and readonly parameter-property styling
+- highlighting examples and per-language analysis for all supported languages, with a manual verification guide
+- tag-triggered Marketplace publishing, GitHub Releases and VSIX artifacts through GitHub Actions
+
+### Changed
+
+- preserve the classic Monokai syntax palette in the dark theme and use darker equivalents in the light theme
+- improve light-theme contrast for comments, strings, functions, attributes, diagnostics and line numbers
+- replace broad light-theme attribute coloring with targeted rules and reset embedded expression colors
+- correct the light theme's type and preformatted-text foreground in both variants
+- preserve code contrast under inactive selections, search matches, word highlights and debug-line backgrounds
+
 ## [1.2.7]
 ### Fixed
 

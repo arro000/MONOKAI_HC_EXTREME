@@ -1,0 +1,26 @@
+<section [attr.aria-label]="title()">
+    <input #searchInput [(ngModel)]="search" (keyup.enter)="searchInput.blur()" />
+    <h1>{{ title() | uppercase }} ({{ activeCount() }})</h1>
+    <time>{{ today | date:'yyyy-MM-dd' }}</time>
+
+    @let filteredUsers = users();
+    @if (filteredUsers.length > 0) {
+        <ul>
+            @for (user of filteredUsers; track user.id; let index = $index) {
+                <li [class.active]="user.active">
+                    <button type="button" (click)="selectUser(user)">
+                        <app-badge [label]="user.name" />
+                    </button>
+                    @switch (user.active) {
+                        @case (true) { <span>Active</span> }
+                        @default { <span>Away</span> }
+                    }
+                </li>
+            } @empty {
+                <li>No users</li>
+            }
+        </ul>
+    } @else {
+        <p>No results for {{ search }}</p>
+    }
+</section>

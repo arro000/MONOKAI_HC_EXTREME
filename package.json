@@ -1,11 +1,11 @@
 {
   "name": "monokai-hc-extreme",
   "displayName": "Monokai HC extreme",
-  "description": "Monokai code theme joined with github high contrast editor theme",
+  "description": "Monokai syntax highlighting with a GitHub-inspired high-contrast interface, in dark and light variants",
   "repository": "https://github.com/arro000/MONOKAI_HC_EXTREME",
   "publisher": "Zibro",
   "icon": "images/icon.png",
-  "version": "1.2.7",
+  "version": "1.3.0",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -16,11 +16,27 @@
     "color-theme",
     "monokai",
     "high-contrast",
-    "github"
+    "github",
+    "csharp",
+    "typescript",
+    "vue",
+    "angular",
+    "go",
+    "rust",
+    "swift",
+    "bash"
   ],
   "categories": [
     "Themes"
   ],
+  "scripts": {
+    "check": "node scripts/check-themes.cjs",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0",
+    "jsonc-parser": "3.3.1"
+  },
   "contributes": {
     "themes": [
       {
