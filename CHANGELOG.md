@@ -4,6 +4,13 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.4.2]
+### Fixed
+
+- set explicit Markdown inline-code backgrounds and borders in both themes, fixing dark text on the inherited blue background in the light variant
+- use contrasting Markdown code-block backgrounds and validate inline/code-block text and syntax contrast
+- fix case-sensitive preview URLs in the README and add a light-theme preview link
+
 ## [1.4.1]
 ### Changed
 

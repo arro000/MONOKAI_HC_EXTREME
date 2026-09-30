@@ -1,11 +1,13 @@
 # Monokai HC Extreme
 
-![alt text](images/preview.png)
+![Monokai HC Extreme theme preview](images/preview.png)
 
 ## A new high contrast clear experience 
 This theme is tailored with the beautiful github high contrast theme for the editor joined with powerful monokai code highlight
 ## Preview
-[Link](https://vscodethemes.com/e/zibro.monokai-hc-extreme/monokai-hc-extreme-dark?language=javascript)
+
+- [Dark theme preview](https://vscodethemes.com/e/Zibro.monokai-hc-extreme/monokai-hc-extreme-dark?language=javascript)
+- [Light theme preview](https://vscodethemes.com/e/Zibro.monokai-hc-extreme/monokai-hc-extreme-light?language=javascript)
 
 ## Install
 
@@ -47,13 +49,15 @@ The dark variant keeps the Monokai color families with a subtly lighter keyword/
 
 Every color in the light variant's semantic syntax palette has at least **7:1 contrast against the white editor background**. Selection, search and other editor overlays use their own backgrounds.
 
+Markdown previews use dedicated neutral backgrounds for inline code and fenced code blocks in both variants. Plain code text has at least **7:1 contrast**, and the semantic syntax palette retains at least **4.5:1 contrast** on code-block backgrounds.
+
 For semantic language support, use **C#** (`ms-dotnettools.csharp`), **Vue - Official** (`Vue.volar`), **Angular Language Service** (`Angular.ng-template`), **Go** (`golang.go`), **rust-analyzer** (`rust-lang.rust-analyzer`) or **Swift** (`swiftlang.swift-vscode`) in a configured project. TypeScript and React JSX/TSX support are built into VS Code; React types in your project refine hook, callback, state and ref classifications. Bash highlighting uses its built-in TextMate grammar. The theme styles tokens supplied by the language services; the available semantic detail depends on those extensions and your project configuration.
 
 See [the highlighting examples and verification guide](examples/README.md) and the separate analyses for [Go](docs/languages/go.md), [Rust](docs/languages/rust.md), [Swift](docs/languages/swift.md), [Bash](docs/languages/bash.md), [TypeScript](docs/languages/typescript.md) and [React](docs/languages/react.md).
 
 ## Development and publishing
 
-With Node.js 22 or newer, run `npm ci`, `npm run check` and `npm run package` to validate and build a VSIX. Pushing a matching version tag, such as `v1.4.1`, publishes the extension to the Marketplace and attaches the VSIX to a GitHub Release.
+With Node.js 22 or newer, run `npm ci`, `npm run check` and `npm run package` to validate and build a VSIX. Pushing a matching version tag, such as `v1.4.2`, publishes the extension to the Marketplace and attaches the VSIX to a GitHub Release.
 
 See [the publishing guide](docs/PUBLISHING.md) for the `VSCE_PAT` repository secret and release commands.
 

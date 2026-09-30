@@ -108,6 +108,22 @@ const themes = manifest.contributes.themes.map(contribution => {
         assert(minimum >= 4.5, `${contribution.label}: ${key} reduces code contrast to ${minimum.toFixed(2)}:1`);
     }
 
+    // Markdown uses separate backgrounds for inline code and fenced code blocks.
+    // Explicit inline colors avoid the incompatible hc-light defaults.
+    for (const key of ['textPreformat.foreground', 'textPreformat.background', 'textPreformat.border', 'textCodeBlock.background']) {
+        checkColor(theme.colors[key], `${contribution.label}: ${key}`);
+    }
+    const inlineBackground = theme.colors['textPreformat.background'];
+    const inlineContrast = contrast(theme.colors['textPreformat.foreground'], inlineBackground);
+    assert(inlineContrast >= 7, `${contribution.label}: Markdown inline code contrast below 7:1`);
+    assert.notEqual(inlineBackground.toLowerCase(), theme.colors['editor.background'].toLowerCase(), `${contribution.label}: Markdown inline code needs a distinct background`);
+    const blockBackground = theme.colors['textCodeBlock.background'];
+    const blockContrast = contrast(theme.colors['editor.foreground'], blockBackground);
+    assert(blockContrast >= 7, `${contribution.label}: Markdown code block contrast below 7:1`);
+    const syntaxContrast = Math.min(...semanticColors.map(color => contrast(color, blockBackground)));
+    assert(syntaxContrast >= 4.5, `${contribution.label}: Markdown code block background reduces syntax contrast to ${syntaxContrast.toFixed(2)}:1`);
+    console.log(`${contribution.label}: Markdown inline ${inlineContrast.toFixed(2)}:1, code block ${blockContrast.toFixed(2)}:1, syntax minimum ${syntaxContrast.toFixed(2)}:1`);
+
     if (!light) {
         for (const [selector, color] of Object.entries({ keyword: '#F9377D', type: '#66D9EF', function: '#A6E22E', parameter: '#F0F3F6', number: '#AE81FF', string: '#E6DB74' })) {
             const style = theme.semanticTokenColors[selector];
