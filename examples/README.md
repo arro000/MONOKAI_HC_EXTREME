@@ -9,6 +9,7 @@ These files are small highlighting fixtures. Copy them into a configured project
 3. Open the examples with the appropriate language extensions installed:
    - C#: **C#** (`ms-dotnettools.csharp`), optionally with C# Dev Kit.
    - TypeScript: VS Code's built-in TypeScript support.
+   - React JSX/TSX: VS Code's built-in JavaScript/TypeScript support, with React and its types in the project.
    - Vue: **Vue - Official** (`Vue.volar`).
    - Angular: **Angular Language Service** (`Angular.ng-template`).
    - Go: **Go** (`golang.go`) with gopls semantic tokens enabled.
@@ -27,6 +28,7 @@ Check declaration/reference consistency, generic types, parameters, properties, 
 - **Swift:** protocols and generic/associated types are cyan italic; attributes/directives are orange; interpolation delimiters purple. SourceKit-LSP distinguishes external argument labels from function names.
 - **Bash:** variable names are cyan, positional parameters/flags orange, special parameters and expansion delimiters purple. Compare expanded and quoted heredocs, as well as literal and interpolating quotes.
 - **TypeScript/TSX:** compare generic parameters with concrete type arguments, `infer`, mapped types, readonly constructor parameters, native JSX tags vs components, JSDoc and nested decorator arguments.
+- **React:** compare [`react/preview.jsx`](react/preview.jsx) and [`react/preview.tsx`](react/preview.tsx). Component tags (including `UI.Badge` and `UserContext.Provider`) and props are cyan; native tags/fragments are pink; expression boundaries are purple. Inspect hooks, state setters, callbacks, refs and event handlers with semantic highlighting enabled. Values, JSX text and comments retain their category colors, including inside spread props, conditional rendering and nested tags.
 
 For Go semantic highlighting, a project can enable `"gopls": { "semanticTokens": true }` in VS Code settings. Recent gopls versions distinguish fields as `property` and receivers as `parameter`; older versions may classify them as ordinary variables. Rust's custom token distinctions use `rust-analyzer.semanticHighlighting.nonStandardTokens`, enabled by default.
 

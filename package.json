@@ -5,7 +5,7 @@
   "repository": "https://github.com/arro000/MONOKAI_HC_EXTREME",
   "publisher": "Zibro",
   "icon": "images/icon.png",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -24,7 +24,10 @@
     "go",
     "rust",
     "swift",
-    "bash"
+    "bash",
+    "react",
+    "jsx",
+    "tsx"
   ],
   "categories": [
     "Themes"

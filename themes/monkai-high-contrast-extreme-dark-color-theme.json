@@ -1273,9 +1273,34 @@
 			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
 		},
 		{
-			"name": "TSX component names, props and object keys",
-			"scope": ["support.class.component.tsx", "entity.other.attribute-name.tsx", "meta.object-literal.key.tsx"],
+			"name": "React JSX and TSX component names, props and object keys",
+			"scope": [
+				"support.class.component.tsx", "support.class.component.js.jsx",
+				"entity.other.attribute-name.tsx", "entity.other.attribute-name.js.jsx",
+				"meta.object-literal.key.tsx", "meta.object-literal.key.js.jsx",
+				"meta.object-literal.key.tsx string.quoted", "meta.object-literal.key.js.jsx string.quoted"
+			],
 			"settings": { "foreground": "#66D9EF", "fontStyle": "" }
+		},
+		{
+			"name": "React JSX declaration keywords",
+			"scope": ["storage.type.js.jsx"],
+			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
+		},
+		{
+			"name": "React JSX and TSX expression delimiters",
+			"scope": ["punctuation.section.embedded.begin.tsx", "punctuation.section.embedded.end.tsx", "punctuation.section.embedded.begin.js.jsx", "punctuation.section.embedded.end.js.jsx"],
+			"settings": { "foreground": "#AE81FF", "fontStyle": "" }
+		},
+		{
+			"name": "React JSX and TSX tag, fragment and prop assignment delimiters",
+			"scope": [
+				"punctuation.definition.tag.begin.tsx", "punctuation.definition.tag.end.tsx",
+				"punctuation.definition.tag.begin.js.jsx", "punctuation.definition.tag.end.js.jsx",
+				"meta.tag.attributes.tsx punctuation.separator.key-value.tsx",
+				"meta.tag.attributes.js.jsx punctuation.separator.key-value.js.jsx"
+			],
+			"settings": { "foreground": "#F92672", "fontStyle": "" }
 		},
 		{
 			"name": "JSDoc tags",

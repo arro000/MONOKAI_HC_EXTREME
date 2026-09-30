@@ -18,12 +18,13 @@ This theme is tailored with the beautiful github high contrast theme for the edi
 
 ## Language highlighting
 
-Both variants enable semantic highlighting and include additional syntax rules for **C#**, **TypeScript/TSX**, **Vue**, **Angular**, **Go**, **Rust**, **Swift** and **Bash**. Types, parameters, properties, constants and methods have consistent semantic colors; template bindings and embedded expressions keep their own syntax highlighting.
+Both variants enable semantic highlighting and include additional syntax rules for **C#**, **TypeScript/TSX**, **React (JSX/TSX)**, **Vue**, **Angular**, **Go**, **Rust**, **Swift** and **Bash**. Types, parameters, properties, constants and methods have consistent semantic colors; template bindings and embedded expressions keep their own syntax highlighting.
 
 | Language | Additional highlighting |
 | --- | --- |
 | C# | Records, delegates, fields, extension methods, XML documentation and interpolated strings |
 | TypeScript/TSX | Conditional/mapped types, JSX components and props, JSDoc and readonly parameter properties |
+| React | Component/native tag distinction, props, fragments, expression boundaries, quoted prop-object keys and JSX/TSX parity |
 | Vue | Directives, shorthand bindings, slots, interpolations and embedded TypeScript/SCSS |
 | Angular | Property/event/two-way bindings, pipes, control flow and inline templates |
 | Go | Builtin functions and types, import aliases, interfaces and format placeholders |
@@ -45,13 +46,13 @@ The dark variant keeps the classic Monokai palette. The light variant uses darke
 
 Every color in the light variant's semantic syntax palette has at least **7:1 contrast against the white editor background**. Selection, search and other editor overlays use their own backgrounds.
 
-For semantic language support, use **C#** (`ms-dotnettools.csharp`), **Vue - Official** (`Vue.volar`), **Angular Language Service** (`Angular.ng-template`), **Go** (`golang.go`), **rust-analyzer** (`rust-lang.rust-analyzer`) or **Swift** (`swiftlang.swift-vscode`) in a configured project. TypeScript support is built into VS Code; Bash highlighting uses its built-in TextMate grammar. The theme styles tokens supplied by the language services; the available semantic detail depends on those extensions and your project configuration.
+For semantic language support, use **C#** (`ms-dotnettools.csharp`), **Vue - Official** (`Vue.volar`), **Angular Language Service** (`Angular.ng-template`), **Go** (`golang.go`), **rust-analyzer** (`rust-lang.rust-analyzer`) or **Swift** (`swiftlang.swift-vscode`) in a configured project. TypeScript and React JSX/TSX support are built into VS Code; React types in your project refine hook, callback, state and ref classifications. Bash highlighting uses its built-in TextMate grammar. The theme styles tokens supplied by the language services; the available semantic detail depends on those extensions and your project configuration.
 
-See [the highlighting examples and verification guide](examples/README.md) and the separate analyses for [Go](docs/languages/go.md), [Rust](docs/languages/rust.md), [Swift](docs/languages/swift.md), [Bash](docs/languages/bash.md) and [TypeScript](docs/languages/typescript.md).
+See [the highlighting examples and verification guide](examples/README.md) and the separate analyses for [Go](docs/languages/go.md), [Rust](docs/languages/rust.md), [Swift](docs/languages/swift.md), [Bash](docs/languages/bash.md), [TypeScript](docs/languages/typescript.md) and [React](docs/languages/react.md).
 
 ## Development and publishing
 
-With Node.js 22 or newer, run `npm ci`, `npm run check` and `npm run package` to validate and build a VSIX. Pushing a matching version tag, such as `v1.3.0`, publishes the extension to the Marketplace and attaches the VSIX to a GitHub Release.
+With Node.js 22 or newer, run `npm ci`, `npm run check` and `npm run package` to validate and build a VSIX. Pushing a matching version tag, such as `v1.4.0`, publishes the extension to the Marketplace and attaches the VSIX to a GitHub Release.
 
 See [the publishing guide](docs/PUBLISHING.md) for the `VSCE_PAT` repository secret and release commands.
 

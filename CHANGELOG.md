@@ -4,6 +4,15 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.4.0]
+### Added
+
+- explicit React JSX support alongside TSX for component names, props and object keys
+- JSX/TSX expression, tag, fragment and prop-assignment delimiter colors using the existing palettes
+- matching quoted prop-object key styling and JSX declaration keyword styling
+- React JSX/TSX examples covering hooks, context providers, refs, memoized components, events, spread props and conditional/list rendering
+- React highlighting analysis documenting the actual lexical and semantic classifications
+
 ## [1.3.0]
 ### Added
 

@@ -1,6 +1,6 @@
 # Publishing a release
 
-The workflow in [`.github/workflows/publish.yml`](../.github/workflows/publish.yml) runs when a tag such as `v1.3.0` is pushed. It validates both themes, checks the tag against `package.json`, packages the extension, publishes the same VSIX to the VS Code Marketplace and attaches it to a GitHub Release.
+The workflow in [`.github/workflows/publish.yml`](../.github/workflows/publish.yml) runs when a tag such as `v1.4.0` is pushed. It validates both themes, checks the tag against `package.json`, packages the extension, publishes the same VSIX to the VS Code Marketplace and attaches it to a GitHub Release.
 
 ## One-time setup
 
@@ -10,16 +10,16 @@ The workflow in [`.github/workflows/publish.yml`](../.github/workflows/publish.y
 
 The GitHub Release uses the automatically provided `GITHUB_TOKEN`; no separate GitHub token is needed.
 
-## Release 1.3.0
+## Release 1.4.0
 
-`package.json` and `package-lock.json` are prepared for **1.3.0**. After committing and pushing the release changes:
+`package.json` and `package-lock.json` are prepared for **1.4.0**. After committing and pushing the release changes:
 
 ```bash
 npm ci
-npm run check -- --tag v1.3.0
+npm run check -- --tag v1.4.0
 npm run package
-git tag -a v1.3.0 -m "Monokai HC Extreme 1.3.0"
-git push origin v1.3.0
+git tag -a v1.4.0 -m "Monokai HC Extreme 1.4.0"
+git push origin v1.4.0
 ```
 
 Follow the **Publish extension** run in GitHub Actions. The VSIX is also saved as a workflow artifact, including when Marketplace publication fails after packaging.
