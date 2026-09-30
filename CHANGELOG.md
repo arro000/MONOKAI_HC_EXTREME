@@ -4,6 +4,14 @@ All notable changes to the "monokai-hc-extreme" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.4.1]
+### Changed
+
+- use the local-variable color and regular font for function parameters in both semantic and TextMate highlighting
+- remove separate readonly constructor-parameter colors and align documented parameter names with variables
+- use shell-variable colors for Bash positional parameters while retaining the option-flag distinction
+- subtly lighten the dark theme's keyword/operator pink from `#F92672` to `#F9377D`
+
 ## [1.4.0]
 ### Added
 

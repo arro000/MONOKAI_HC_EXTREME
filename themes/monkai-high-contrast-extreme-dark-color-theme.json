@@ -801,14 +801,14 @@
 		{
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#F92672",
+				"foreground": "#F9377D",
 				"fontStyle": "bold"
 			}
 		},
 		{
 			"scope": "storage",
 			"settings": {
-				"foreground": "#F92672",
+				"foreground": "#F9377D",
 				"fontStyle": "bold"
 			}
 		},
@@ -843,14 +843,14 @@
 		{
 			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#FD971F",
-				"fontStyle": "italic"
+				"foreground": "#F0F3F6",
+				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#F92672",
+				"foreground": "#F9377D",
 				"fontStyle": "bold"
 			}
 		},
@@ -895,7 +895,7 @@
 			"scope": "invalid",
 			"settings": {
 				"foreground": "#F8F8F0",
-				"background": "#F92672",
+				"background": "#F9377D",
 				"fontStyle": "bold"
 			}
 		},
@@ -924,8 +924,8 @@
 		{
 			"scope": "markup.deleted",
 			"settings": {
-				"foreground": "#F92672",
-				"background": "#F92672"
+				"foreground": "#F9377D",
+				"background": "#F9377D"
 			}
 		},
 		{
@@ -1088,7 +1088,7 @@
 				"storage.type.record", "storage.type.delegate", "storage.type.namespace", "storage.type.event",
 				"storage.type.function", "storage.type.type", "storage.type.var", "storage.type.accessor", "storage.type.ng"
 			],
-			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "bold" }
 		},
 		{
 			"name": "Primitive types",
@@ -1098,7 +1098,7 @@
 		{
 			"name": "Operators",
 			"scope": ["keyword.operator"],
-			"settings": { "foreground": "#F92672", "fontStyle": "" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "" }
 		},
 		{
 			"name": "Local variables and neutral punctuation",
@@ -1122,7 +1122,7 @@
 		{
 			"name": "Parameters",
 			"scope": ["variable.parameter", "entity.name.variable.parameter.cs"],
-			"settings": { "foreground": "#FD971F", "fontStyle": "italic" }
+			"settings": { "foreground": "#F0F3F6", "fontStyle": "" }
 		},
 		{
 			"name": "Constants and enum members",
@@ -1160,7 +1160,7 @@
 		{
 			"name": "Vue shorthand and Angular binding delimiters",
 			"scope": ["punctuation.attribute-shorthand", "punctuation.definition.ng-binding-name"],
-			"settings": { "foreground": "#F92672", "fontStyle": "" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "" }
 		},
 		{
 			"name": "Vue and Angular attribute quotes",
@@ -1175,7 +1175,7 @@
 		{
 			"name": "Documentation parameters",
 			"scope": ["variable.other.jsdoc"],
-			"settings": { "foreground": "#FD971F", "fontStyle": "italic" }
+			"settings": { "foreground": "#F0F3F6", "fontStyle": "" }
 		},
 		{
 			"name": "Documentation descriptions",
@@ -1195,7 +1195,7 @@
 		{
 			"name": "Rust declaration keywords",
 			"scope": ["storage.type.rust"],
-			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "bold" }
 		},
 		{
 			"name": "Rust lifetimes and lexical labels",
@@ -1235,7 +1235,7 @@
 		{
 			"name": "Swift declaration keywords",
 			"scope": ["source.swift storage.type"],
-			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "bold" }
 		},
 		{
 			"name": "Swift protocols, associated types and generic parameters",
@@ -1270,7 +1270,7 @@
 		{
 			"name": "TypeScript and TSX variable and constructor keywords",
 			"scope": ["storage.type.ts", "storage.type.tsx"],
-			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "bold" }
 		},
 		{
 			"name": "React JSX and TSX component names, props and object keys",
@@ -1285,7 +1285,7 @@
 		{
 			"name": "React JSX declaration keywords",
 			"scope": ["storage.type.js.jsx"],
-			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "bold" }
 		},
 		{
 			"name": "React JSX and TSX expression delimiters",
@@ -1300,7 +1300,7 @@
 				"meta.tag.attributes.tsx punctuation.separator.key-value.tsx",
 				"meta.tag.attributes.js.jsx punctuation.separator.key-value.js.jsx"
 			],
-			"settings": { "foreground": "#F92672", "fontStyle": "" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "" }
 		},
 		{
 			"name": "JSDoc tags",
@@ -1318,8 +1318,13 @@
 			"settings": { "foreground": "#66D9EF", "fontStyle": "" }
 		},
 		{
-			"name": "Shell positional parameters and option flags",
-			"scope": ["variable.parameter.positional.shell", "variable.parameter.positional.all.shell", "source.shell constant.other.option"],
+			"name": "Shell positional parameters",
+			"scope": ["variable.parameter.positional.shell", "variable.parameter.positional.all.shell"],
+			"settings": { "foreground": "#66D9EF", "fontStyle": "" }
+		},
+		{
+			"name": "Shell option flags",
+			"scope": ["source.shell constant.other.option"],
 			"settings": { "foreground": "#FD971F", "fontStyle": "" }
 		},
 		{
@@ -1348,7 +1353,7 @@
 		{
 			"name": "Shell command separators and wildcard operators",
 			"scope": ["punctuation.definition.logical-expression.shell", "punctuation.separator.statement.and.shell", "punctuation.separator.statement.or.shell", "punctuation.separator.statement.background.shell", "variable.language.special.wildcard.shell"],
-			"settings": { "foreground": "#F92672", "fontStyle": "" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "" }
 		},
 		{
 			"name": "Shell heredoc labels and shebang",
@@ -1363,7 +1368,7 @@
 		{
 			"name": "Shell declaration keywords",
 			"scope": ["storage.type.function.shell", "storage.type.alias.shell"],
-			"settings": { "foreground": "#F92672", "fontStyle": "bold" }
+			"settings": { "foreground": "#F9377D", "fontStyle": "bold" }
 		}
 	],
 	"semanticTokenColors": {
@@ -1374,7 +1379,7 @@
 		"struct": { "foreground": "#66D9EF", "fontStyle": "" },
 		"enum": { "foreground": "#66D9EF", "fontStyle": "" },
 		"typeParameter": { "foreground": "#66D9EF", "fontStyle": "italic" },
-		"parameter": { "foreground": "#FD971F", "fontStyle": "italic" },
+		"parameter": { "foreground": "#F0F3F6", "fontStyle": "" },
 		"variable": { "foreground": "#F0F3F6", "fontStyle": "" },
 		"property": { "foreground": "#66D9EF", "fontStyle": "" },
 		"variable.readonly": "#AE81FF",
@@ -1386,8 +1391,8 @@
 		"method.defaultLibrary": "#66D9EF",
 		"event": { "foreground": "#A6E22E", "fontStyle": "" },
 		"decorator": { "foreground": "#FD971F", "fontStyle": "" },
-		"keyword": { "foreground": "#F92672", "fontStyle": "bold" },
-		"operator": { "foreground": "#F92672", "fontStyle": "" },
+		"keyword": { "foreground": "#F9377D", "fontStyle": "bold" },
+		"operator": { "foreground": "#F9377D", "fontStyle": "" },
 		"number": "#AE81FF",
 		"string": "#E6DB74",
 		"regexp": "#E6DB74",
@@ -1402,8 +1407,8 @@
 		"field.readonly:csharp": "#AE81FF",
 		"constant:csharp": { "foreground": "#AE81FF", "fontStyle": "" },
 		"extensionMethod:csharp": { "foreground": "#A6E22E", "fontStyle": "" },
-		"operatorOverloaded:csharp": { "foreground": "#F92672", "fontStyle": "" },
-		"controlKeyword:csharp": { "foreground": "#F92672", "fontStyle": "bold" },
+		"operatorOverloaded:csharp": { "foreground": "#F9377D", "fontStyle": "" },
+		"controlKeyword:csharp": { "foreground": "#F9377D", "fontStyle": "bold" },
 		"stringVerbatim:csharp": "#E6DB74",
 		"stringEscapeCharacter:csharp": "#AE81FF",
 		"punctuation:csharp": { "foreground": "#F0F3F6", "fontStyle": "" },
@@ -1422,10 +1427,10 @@
 		"regexText:csharp": "#E6DB74",
 		"regexComment:csharp": "#FD971F",
 		"regexCharacterClass:csharp": "#AE81FF",
-		"regexAnchor:csharp": "#F92672",
-		"regexQuantifier:csharp": "#F92672",
+		"regexAnchor:csharp": "#F9377D",
+		"regexQuantifier:csharp": "#F9377D",
 		"regexGrouping:csharp": "#AE81FF",
-		"regexAlternation:csharp": "#F92672",
+		"regexAlternation:csharp": "#F9377D",
 		"regexSelfEscapedCharacter:csharp": "#AE81FF",
 		"regexOtherEscape:csharp": "#AE81FF",
 		"type.interface:go": { "foreground": "#66D9EF", "fontStyle": "italic" },
@@ -1450,8 +1455,6 @@
 		"modifier:swift": { "foreground": "#FD971F", "fontStyle": "" },
 		"macro:swift": { "foreground": "#FD971F", "fontStyle": "" },
 		"comment.documentation:swift": { "italic": true },
-		"parameter.readonly:typescript": { "foreground": "#AE81FF", "fontStyle": "italic" },
-		"parameter.readonly:typescriptreact": { "foreground": "#AE81FF", "fontStyle": "italic" },
 		"*.deprecated": { "strikethrough": true },
 		"*.deprecated:csharp": { "strikethrough": true },
 		"*.deprecated:vue": { "strikethrough": true },

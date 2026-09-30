@@ -14,7 +14,7 @@ The installed TypeScript/TSX grammars, JSDoc injections and TypeScript language 
 
 ## Integrated rules
 
-Declaration keywords are pink; TSX component names, props/object keys and JSDoc tags cyan. Readonly constructor parameters are purple italic. Generic parameters remain cyan italic semantic tokens; concrete type arguments keep their type style. Conditional/mapped types, discriminated unions, destructuring, regex and template literals use their existing category rules.
+Declaration keywords are pink; TSX component names, props/object keys and JSDoc tags cyan. Function parameters, including readonly constructor parameters, use the same neutral color and regular font as local variables. References classified as readonly properties still use the property category. Generic type parameters remain cyan italic semantic tokens; concrete type arguments keep their type style. Conditional/mapped types, discriminated unions, destructuring, regex and template literals use their existing category rules.
 
 Decorator `@` markers are orange. Function names and nested decorator arguments keep their own classifications, including Angular inline templates.
 

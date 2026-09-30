@@ -12,7 +12,7 @@ The built-in shellscript extension registers `source.shell`, using a grammar der
 
 ## Integrated rules
 
-Variable names are cyan, positional parameters and flags orange, special parameters and expansion delimiters purple. Function declarations/external calls are green, lexically recognized builtin commands cyan, command separators pink. Embedded command/arithmetic bodies reset the inherited string color. Heredoc labels and shebangs are cyan.
+Variable names and positional parameters are cyan, flags orange, special parameters and expansion delimiters purple. Function declarations/external calls are green, lexically recognized builtin commands cyan, command separators pink. Embedded command/arithmetic bodies reset the inherited string color. Heredoc labels and shebangs are cyan.
 
 Longer scope selectors preserve the delimiter color when `$` is classified with both punctuation and variable scopes. Prefix selectors qualified by `source.shell` cover suffixless flags and dynamic heredoc labels.
 

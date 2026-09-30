@@ -748,8 +748,8 @@
 		{
 			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#794e00",
-				"fontStyle": "italic"
+				"foreground": "#24292F",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -961,7 +961,7 @@
 		{
 			"name": "Parameters",
 			"scope": ["variable.parameter", "entity.name.variable.parameter.cs"],
-			"settings": { "foreground": "#8A451F", "fontStyle": "italic" }
+			"settings": { "foreground": "#24292F", "fontStyle": "" }
 		},
 		{
 			"name": "Constants and enum members",
@@ -1014,7 +1014,7 @@
 		{
 			"name": "Documentation parameters",
 			"scope": ["variable.other.jsdoc"],
-			"settings": { "foreground": "#8A451F", "fontStyle": "italic" }
+			"settings": { "foreground": "#24292F", "fontStyle": "" }
 		},
 		{
 			"name": "Documentation descriptions",
@@ -1157,8 +1157,13 @@
 			"settings": { "foreground": "#005466", "fontStyle": "" }
 		},
 		{
-			"name": "Shell positional parameters and option flags",
-			"scope": ["variable.parameter.positional.shell", "variable.parameter.positional.all.shell", "source.shell constant.other.option"],
+			"name": "Shell positional parameters",
+			"scope": ["variable.parameter.positional.shell", "variable.parameter.positional.all.shell"],
+			"settings": { "foreground": "#005466", "fontStyle": "" }
+		},
+		{
+			"name": "Shell option flags",
+			"scope": ["source.shell constant.other.option"],
 			"settings": { "foreground": "#8A451F", "fontStyle": "" }
 		},
 		{
@@ -1213,7 +1218,7 @@
 		"struct": { "foreground": "#005466", "fontStyle": "" },
 		"enum": { "foreground": "#005466", "fontStyle": "" },
 		"typeParameter": { "foreground": "#005466", "fontStyle": "italic" },
-		"parameter": { "foreground": "#8A451F", "fontStyle": "italic" },
+		"parameter": { "foreground": "#24292F", "fontStyle": "" },
 		"variable": { "foreground": "#24292F", "fontStyle": "" },
 		"property": { "foreground": "#005466", "fontStyle": "" },
 		"variable.readonly": "#552AA3",
@@ -1289,8 +1294,6 @@
 		"modifier:swift": { "foreground": "#8A451F", "fontStyle": "" },
 		"macro:swift": { "foreground": "#8A451F", "fontStyle": "" },
 		"comment.documentation:swift": { "italic": true },
-		"parameter.readonly:typescript": { "foreground": "#552AA3", "fontStyle": "italic" },
-		"parameter.readonly:typescriptreact": { "foreground": "#552AA3", "fontStyle": "italic" },
 		"*.deprecated": { "strikethrough": true },
 		"*.deprecated:csharp": { "strikethrough": true },
 		"*.deprecated:vue": { "strikethrough": true },

@@ -109,9 +109,9 @@ const themes = manifest.contributes.themes.map(contribution => {
     }
 
     if (!light) {
-        for (const [selector, color] of Object.entries({ keyword: '#F92672', type: '#66D9EF', function: '#A6E22E', parameter: '#FD971F', number: '#AE81FF', string: '#E6DB74' })) {
+        for (const [selector, color] of Object.entries({ keyword: '#F9377D', type: '#66D9EF', function: '#A6E22E', parameter: '#F0F3F6', number: '#AE81FF', string: '#E6DB74' })) {
             const style = theme.semanticTokenColors[selector];
-            assert.equal(typeof style === 'string' ? style : style.foreground, color, `${selector}: classic Monokai palette changed`);
+            assert.equal(typeof style === 'string' ? style : style.foreground, color, `${selector}: Monokai syntax palette changed`);
         }
     }
     console.log(`${contribution.label}: JSON, scopes, semantic styles and contrast OK`);

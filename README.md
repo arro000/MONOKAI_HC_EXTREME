@@ -32,14 +32,15 @@ Both variants enable semantic highlighting and include additional syntax rules f
 | Swift | Protocols, associated types, argument labels, attributes and compiler directives |
 | Bash | Variable expansion, positional/special parameters, substitutions, command flags and heredocs |
 
-The dark variant keeps the classic Monokai palette. The light variant uses darker counterparts for high contrast on white, including more readable comments and strings.
+The dark variant keeps the Monokai color families with a subtly lighter keyword/operator accent. The light variant uses darker counterparts for high contrast on white, including more readable comments and strings.
 
 | Syntax role | Dark | Light |
 | --- | --- | --- |
-| Keywords and operators | Pink `#F92672` | Deep pink `#AC154C` |
+| Keywords and operators | Pink `#F9377D` | Deep pink `#AC154C` |
 | Types and properties | Cyan `#66D9EF` | Deep cyan `#005466` |
 | Functions and methods | Green `#A6E22E` | Deep green `#2F6100` |
-| Parameters and decorators | Orange `#FD971F` | Burnt orange `#8A451F` |
+| Local variables and function parameters | Neutral `#F0F3F6` | Neutral `#24292F` |
+| Decorators and macro markers | Orange `#FD971F` | Burnt orange `#8A451F` |
 | Constants, numbers and escapes | Purple `#AE81FF` | Deep purple `#552AA3` |
 | Strings | Yellow `#E6DB74` | Ochre `#794E00` |
 | Comments | Orange `#FD971F` | Gray-green `#555B50` |
@@ -52,7 +53,7 @@ See [the highlighting examples and verification guide](examples/README.md) and t
 
 ## Development and publishing
 
-With Node.js 22 or newer, run `npm ci`, `npm run check` and `npm run package` to validate and build a VSIX. Pushing a matching version tag, such as `v1.4.0`, publishes the extension to the Marketplace and attaches the VSIX to a GitHub Release.
+With Node.js 22 or newer, run `npm ci`, `npm run check` and `npm run package` to validate and build a VSIX. Pushing a matching version tag, such as `v1.4.1`, publishes the extension to the Marketplace and attaches the VSIX to a GitHub Release.
 
 See [the publishing guide](docs/PUBLISHING.md) for the `VSCE_PAT` repository secret and release commands.
 
